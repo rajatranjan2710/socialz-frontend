@@ -21,6 +21,8 @@ const App = () => {
   const { isAuthenticated, authCheck, user } = useAuthStore();
   const { socket, connectSocket, disconnectSocket } = useSocketStore();
 
+  console.log("User is:", user);
+
   //notification initialization
   // useSetNotification();
 
