@@ -85,4 +85,4 @@ export const useAuthStore = create((set) => ({
   },
 }));
 
-export const server = `https://socialite-be79.onrender.com/api/v1`;
+export const server = `https://socialite-backend.vercel.app/api/v1`;
