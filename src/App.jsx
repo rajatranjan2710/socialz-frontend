@@ -31,6 +31,7 @@ const App = () => {
   //socket connection
   React.useEffect(() => {
     if (user) {
+      console.log("USER is" , user);
       connectSocket(user._id);
     } else {
       disconnectSocket();
