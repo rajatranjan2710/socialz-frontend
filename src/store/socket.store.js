@@ -6,7 +6,7 @@ const useSocketStore = create((set) => ({
   socket: null,
   connectSocket: (userId) => {
     // if (state.socket) return;
-    const socket = io("https://socialite-be79.onrender.com", {
+    const socket = io("https://socialite-backend.vercel.app", {
       query: { userId },
     });
     socket.on("connect", () => {
