@@ -7,7 +7,9 @@ const useSocketStore = create((set) => ({
   connectSocket: (userId) => {
     // if (state.socket) return;
     const socket = io("https://socialite-backend.vercel.app", {
-      query: { userId },
+      query: { userId},
+      transports: ["websocket"],
+      withCredentials: true
     });
     socket.on("connect", () => {
       console.log("connected");
